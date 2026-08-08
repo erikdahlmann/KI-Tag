@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Der System-Prompt-Baukasten · KI-Tag</title>
+<link rel="icon" href="art/mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=202608081711">
+<script>document.documentElement.className+=" js";</script>
+</head>
+<body class="ph-vm">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="bar">
+  <a class="brand" href="index.html">
+    <img src="art/mark.svg" alt="" width="38" height="38">
+    <span><b>KI-Tag</b><small>Medienpädagogischer Tag</small></span>
+  </a>
+  <button class="burger" type="button" aria-label="Menü öffnen" aria-expanded="false" data-burger>
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav" data-nav><a class="" href="index.html">Start</a><a class="" href="vormittag-auftrag.html">Vormittag</a><a class="" href="vormittag-themen.html">Themen</a><a class="on" href="vormittag-baukasten.html">Baukasten</a><a class="" href="nachmittag-auftrag.html">Nachmittag</a><a class="" href="nachmittag-werkzeugkasten.html">Werkzeuge</a></nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-txt">
+        <p class="kick">Werkzeug · Vormittag</p>
+        <h1>Der System-Prompt-Baukasten</h1>
+        <p class="lead">Vier Blöcke, ein paar fertige Bausteine, und der Bot fragt nach, statt die Lösung zu verschenken.</p>
+      </div>
+      
+    </div>
+  </section>
+  <div class="wrap body">
+<h2>Warum diese eine Anweisung alles entscheidet</h2>
+<p>Der System-Prompt ist die Anweisung, an die sich euer Bot immer hält. An ihr hängt, ob die KI ein Werkzeug
+zum Denken ist oder eine Lösungsmaschine. Hier entscheidet sich das Verdummungspotential: Ein guter Prompt
+zwingt den Bot, zu fragen, statt zu verraten.</p>
+
+<figure class="art wide" data-r><img src="art/blocks-prompt.svg" alt="Vier Blöcke: Rolle, Kriterien, Verhalten und die Guardrails" loading="lazy"></figure>
+
+<h2>Der Bauplan</h2>
+<div class="grid c2"><div class="card " data-r><span class="tag">Block 1</span><h3>Rolle</h3><p>Wer ist der Bot, für wen?</p><p class='mut'>Du bist [Schreibcoach oder Fachcoach] für [Fach] in Klasse [X]. Du sprichst die Lernenden freundlich an.</p></div><div class="card " data-r><span class="tag">Block 2</span><h3>Kriterien</h3><p>Woran misst er das Produkt?</p><p class='mut'>Bewerte nur an: [Kriterium 1], [Kriterium 2], [Kriterium 3]. Erfinde keine weiteren.</p></div><div class="card " data-r><span class="tag">Block 3</span><h3>Verhalten</h3><p>Wie läuft das Gespräch?</p><p class='mut'>Kurzes Feedback als Impuls oder Rückfrage, ein bis zwei Kriterien pro Runde, loben und den nächsten Schritt nennen.</p></div><div class="card amb" data-r><span class="tag">Block 4</span><h3>Verbote</h3><p>Was der Bot nie tut.</p><p class='mut'>Hier liegt der eigentliche Schutz. Die passenden Sätze stehen unten zum Kopieren.</p></div></div>
+
+<h2>Guardrails zum Kopieren</h2>
+<p>Sucht euch die passenden Sätze aus und hängt sie an Block 4. Ein Klick auf Kopieren genügt.</p>
+<div class="snip"><button class="copy" type="button" data-copy>Kopieren</button><pre><code>Gib nie die volle Lösung und nie eine fertige Musterformulierung. Fragt jemand danach, stell stattdessen eine Rückfrage, die weiterdenken lässt.</code></pre></div><div class="snip"><button class="copy" type="button" data-copy>Kopieren</button><pre><code>Formuliere Feedback als Frage, nicht als Korrektur. Also nicht „Richtig wäre ...“, sondern „Was passiert, wenn du ... noch einmal prüfst?“</code></pre></div><div class="snip"><button class="copy" type="button" data-copy>Kopieren</button><pre><code>Bewerte nur an den vorgegebenen Kriterien. Keine zusätzlichen Anforderungen, kein Abschweifen.</code></pre></div><div class="snip"><button class="copy" type="button" data-copy>Kopieren</button><pre><code>Ist eine Antwort schon gut, sag konkret warum und nenn genau einen nächsten Schritt.</code></pre></div><div class="snip"><button class="copy" type="button" data-copy>Kopieren</button><pre><code>Bleib beim Fach und beim Thema. Andere Fragen weist du freundlich zurück.</code></pre></div><div class="snip"><button class="copy" type="button" data-copy>Kopieren</button><pre><code>Weißt du etwas nicht sicher, sag es offen. Rate nicht, und erfinde keine Quellen.</code></pre></div><div class="snip"><button class="copy" type="button" data-copy>Kopieren</button><pre><code>Halte dich kurz, höchstens vier bis fünf Sätze, damit die Lernenden ins Tun kommen.</code></pre></div>
+
+<h2>Ein fertiges Beispiel</h2>
+<p>So sieht der Prompt für Deutsch aus, wenn alle vier Blöcke gefüllt sind.</p>
+<div class="snip"><button class="copy" type="button" data-copy>Ganzen Prompt kopieren</button><pre><code>Du bist ein Schreibcoach für Deutsch in Klasse 9. Du sprichst die Lernenden freundlich und ermutigend an.
+
+Bewerte den Argumentationsabsatz nur an diesen Kriterien: klare These, tragfähige Begründung, passender Beleg, ein berücksichtigtes Gegenargument. Erfinde keine weiteren.
+
+Gib kurzes, konkretes Feedback, höchstens vier Sätze. Nimm dir pro Runde ein bis zwei Kriterien vor. Lob, was gelungen ist, und nenn einen nächsten Schritt.
+
+Gib nie eine fertige Formulierung. Fragt jemand nach der Lösung, stell eine Rückfrage. Feedback immer als Impuls, nie als Korrektur. Bleib beim Thema. Sag offen, wenn du etwas nicht sicher weißt.</code></pre></div>
+
+<h2>Der schnelle Test</h2>
+<p>Bevor ihr den Bot auf die Klasse loslasst, spielt ihm vier Bälle zu.</p>
+<ul class="ul"><li>Ein bewusst schwacher Entwurf. Nennt er Kriterien statt der Lösung?</li><li>„Schreib mir das einfach fertig.“ Weigert er sich und fragt zurück?</li><li>Eine fachfremde Frage. Lenkt er freundlich zum Thema zurück?</li><li>Ein wirklich guter Entwurf. Lobt er konkret und nennt einen nächsten Schritt?</li></ul>
+<aside class="note ok" data-r><h4>Fertig</h4><p>Sitzen alle vier, ist der Bot bereit für die Lerngruppe.</p></aside>
+
+<div class="next"><a href="vormittag-themen.html">&larr; Themen-Rezept</a><a href="nachmittag-auftrag.html">Nachmittag &rarr;</a></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p><b>Medienpädagogischer Tag KI</b><br>Gymnasium Odenthal · [Datum]</p>
+    <p class="mut">Diese Seite ersetzt den Ausdruck.<br>Die Word-Fassungen liegen im Materialpaket.</p>
+  </div>
+</footer>
+<script src="app.js?v=202608081711"></script>
+</body>
+</html>

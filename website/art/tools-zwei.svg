@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 290" width="760" height="290" role="img" fill="none">
+<rect x="0" y="0" width="760" height="290" rx="18" fill="#fbfcfa"/>
+<rect x="34" y="34" width="330" height="196" rx="14" fill="#eaf3ee" stroke="#3d9670" stroke-width="2"/>
+<text x="199" y="64" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="700" fill="#0f3d2a" text-anchor="middle">Gemini · Canvas</text>
+<rect x="76" y="80" width="190" height="92" rx="9" fill="#fbfcfa" stroke="#1a6b47" stroke-width="2" opacity="0.35"/>
+<rect x="90" y="90" width="190" height="92" rx="9" fill="#fbfcfa" stroke="#1a6b47" stroke-width="2" opacity="0.6499999999999999"/>
+<rect x="104" y="100" width="190" height="92" rx="9" fill="#fbfcfa" stroke="#1a6b47" stroke-width="2" opacity="0.95"/>
+<rect x="120" y="118" width="120" height="7" rx="3.5" fill="#bcdcca"/>
+<rect x="120" y="138" width="92" height="7" rx="3.5" fill="#bcdcca"/>
+<rect x="120" y="158" width="140" height="7" rx="3.5" fill="#bcdcca"/>
+<text x="199" y="214" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="500" fill="#8b9a91" text-anchor="middle">baut aus wenig viel</text>
+<rect x="396" y="34" width="330" height="196" rx="14" fill="#f8ecd7" stroke="#c07d1c" stroke-width="2"/>
+<text x="561" y="64" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="700" fill="#0f3d2a" text-anchor="middle">NotebookLM</text>
+<rect x="440" y="84" width="242" height="112" rx="10" fill="#fbfcfa" stroke="#c07d1c" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="460" y="102" width="56" height="74" rx="7" fill="#f8ecd7" stroke="#c07d1c" stroke-width="1.8"/>
+<rect x="469" y="116" width="34" height="5" rx="2.5" fill="#c07d1c" opacity="0.55"/>
+<rect x="469" y="130" width="26" height="5" rx="2.5" fill="#c07d1c" opacity="0.55"/>
+<rect x="469" y="144" width="38" height="5" rx="2.5" fill="#c07d1c" opacity="0.55"/>
+<rect x="536" y="102" width="56" height="74" rx="7" fill="#f8ecd7" stroke="#c07d1c" stroke-width="1.8"/>
+<rect x="545" y="116" width="34" height="5" rx="2.5" fill="#c07d1c" opacity="0.55"/>
+<rect x="545" y="130" width="26" height="5" rx="2.5" fill="#c07d1c" opacity="0.55"/>
+<rect x="545" y="144" width="38" height="5" rx="2.5" fill="#c07d1c" opacity="0.55"/>
+<rect x="612" y="102" width="56" height="74" rx="7" fill="#f8ecd7" stroke="#c07d1c" stroke-width="1.8"/>
+<rect x="621" y="116" width="34" height="5" rx="2.5" fill="#c07d1c" opacity="0.55"/>
+<rect x="621" y="130" width="26" height="5" rx="2.5" fill="#c07d1c" opacity="0.55"/>
+<rect x="621" y="144" width="38" height="5" rx="2.5" fill="#c07d1c" opacity="0.55"/>
+<text x="561" y="214" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="500" fill="#8b9a91" text-anchor="middle">nur eure Quellen, nichts erfunden</text>
+</svg>

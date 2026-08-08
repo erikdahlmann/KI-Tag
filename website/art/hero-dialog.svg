@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" role="img" fill="none">
+<rect x="0" y="0" width="760" height="440" rx="18" fill="#eaf3ee"/>
+<rect x="56" y="70" width="252" height="300" rx="14" fill="#fbfcfa" stroke="#d6e3da" stroke-width="2"/>
+<text x="182" y="55" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#0f3d2a" text-anchor="middle">Lernende</text>
+<rect x="82" y="104" width="190" height="10" rx="5" fill="#bcdcca"/>
+<rect x="82" y="142" width="168" height="10" rx="5" fill="#bcdcca"/>
+<rect x="82" y="180" width="200" height="10" rx="5" fill="#bcdcca"/>
+<rect x="82" y="218" width="150" height="10" rx="5" fill="#bcdcca"/>
+<rect x="82" y="256" width="178" height="10" rx="5" fill="#bcdcca"/>
+<rect x="82" y="294" width="132" height="10" rx="5" fill="#bcdcca"/>
+<rect x="452" y="70" width="252" height="300" rx="14" fill="#fbfcfa" stroke="#d6e3da" stroke-width="2"/>
+<text x="578" y="55" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#0f3d2a" text-anchor="middle">KI</text>
+<rect x="478" y="112" width="160" height="10" rx="5" fill="#bcdcca"/>
+<rect x="478" y="158" width="196" height="10" rx="5" fill="#bcdcca"/>
+<rect x="478" y="204" width="140" height="10" rx="5" fill="#bcdcca"/>
+<rect x="478" y="250" width="184" height="10" rx="5" fill="#bcdcca"/>
+<circle cx="470" cy="117" r="4" fill="#c07d1c"/>
+<circle cx="470" cy="163" r="4" fill="#c07d1c"/>
+<circle cx="470" cy="209" r="4" fill="#c07d1c"/>
+<circle cx="470" cy="255" r="4" fill="#c07d1c"/>
+<path d="M308 140 C 360 118, 400 118, 452 140" stroke="#1a6b47" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M452 226 C 400 248, 360 248, 308 226" stroke="#c07d1c" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M308 312 C 360 290, 400 290, 452 312" stroke="#1a6b47" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M446 134 L454 140 L446 146" stroke="#1a6b47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M314 220 L306 226 L314 232" stroke="#c07d1c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M446 306 L454 312 L446 318" stroke="#1a6b47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="356" cy="398" r="5" fill="#1a6b47"/>
+<circle cx="380" cy="398" r="5" fill="#1a6b47"/>
+<circle cx="404" cy="398" r="5" fill="#bcdcca"/>
+</svg>

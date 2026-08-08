@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" fill="none">
+<rect x="0" y="0" width="760" height="300" rx="18" fill="#fbfcfa"/>
+<circle cx="86" cy="150" r="30" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
+<rect x="72" y="140" width="26" height="5" rx="2.5" fill="#3d9670"/>
+<rect x="72" y="149" width="20" height="5" rx="2.5" fill="#3d9670"/>
+<rect x="72" y="158" width="30" height="5" rx="2.5" fill="#3d9670"/>
+<text x="86" y="214" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b9a91" text-anchor="middle">euer Material</text>
+<path d="M124 150 C 240 150, 300 66, 430 66" stroke="#3d9670" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+<rect x="440" y="40" width="52" height="52" rx="12" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
+<text x="466" y="72" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="18" font-weight="700" fill="#1a6b47" text-anchor="middle">A</text>
+<text x="506" y="72" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#0f3d2a" text-anchor="start">Arbeitsblatt</text>
+<path d="M124 150 C 240 150, 300 150, 430 150" stroke="#c07d1c" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+<rect x="440" y="124" width="52" height="52" rx="12" fill="#f8ecd7" stroke="#c07d1c" stroke-width="2"/>
+<text x="466" y="156" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="18" font-weight="700" fill="#c07d1c" text-anchor="middle">B</text>
+<text x="506" y="156" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#0f3d2a" text-anchor="start">Erwartungshorizont</text>
+<path d="M124 150 C 240 150, 300 234, 430 234" stroke="#3d9670" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+<rect x="440" y="208" width="52" height="52" rx="12" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
+<text x="466" y="240" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="18" font-weight="700" fill="#1a6b47" text-anchor="middle">C</text>
+<text x="506" y="240" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#0f3d2a" text-anchor="start">Quellen-Umbau</text>
+<text x="380.0" y="284" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="500" fill="#8b9a91" text-anchor="middle">Eine Sache bis zum Ende bringen</text>
+</svg>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>KI-Ping-Pong im Fachunterricht · KI-Tag</title>
+<link rel="icon" href="art/mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=202608081711">
+<script>document.documentElement.className+=" js";</script>
+</head>
+<body class="ph-vm">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="bar">
+  <a class="brand" href="index.html">
+    <img src="art/mark.svg" alt="" width="38" height="38">
+    <span><b>KI-Tag</b><small>Medienpädagogischer Tag</small></span>
+  </a>
+  <button class="burger" type="button" aria-label="Menü öffnen" aria-expanded="false" data-burger>
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav" data-nav><a class="" href="index.html">Start</a><a class="on" href="vormittag-auftrag.html">Vormittag</a><a class="" href="vormittag-themen.html">Themen</a><a class="" href="vormittag-baukasten.html">Baukasten</a><a class="" href="nachmittag-auftrag.html">Nachmittag</a><a class="" href="nachmittag-werkzeugkasten.html">Werkzeuge</a></nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-txt">
+        <p class="kick">Arbeitsphase I · Vormittag</p>
+        <h1>KI-Ping-Pong im Fachunterricht</h1>
+        <p class="lead">Ein Lernszenario für den fobizz-Klassenraum bauen: textbasiert, datenschutzkonform, und so, dass die Köpfe arbeiten.</p>
+      </div>
+      
+    </div>
+  </section>
+  <div class="wrap body">
+<p>In eurer Kleingruppe baut ihr ein Unterrichtselement, in dem die KI eure Schülerinnen und Schüler
+nicht bedient, sondern fordert. Wir nennen das Ping-Pong: Die Klasse schreibt etwas, die KI spielt ein
+kriterienbasiertes Feedback zurück, die Lernenden überarbeiten. Kein fertiges Ergebnis auf Knopfdruck.
+Die KI fragt nach, denken müssen die anderen.</p>
+
+<figure class="art wide" data-r><img src="art/cycle-pingpong.svg" alt="Kreislauf aus Schreiben, Feedback, Prüfen und Überarbeiten, mit Rücklauf" loading="lazy"></figure>
+
+<aside class="note warn" data-r><h4>Das solltet ihr zuerst wissen</h4><p>Der fobizz-Chatbot versteht <b>nur Text</b>. Keine Fotos, keine Handschrift-Scans, keine Bilder; so schreibt es der Datenschutz vor. Was die Lernenden abgeben, muss also von Anfang an getippt oder diktiert sein. Denkt schon bei der Themenwahl daran.</p></aside>
+
+<h2>Was am Ende stehen soll</h2>
+<ul class="ul"><li>ein fertig eingerichteter fobizz-Klassenraum mit eurem Fach-Chatbot,</li><li>ein Schüler-Arbeitsauftrag, der das Ping-Pong wirklich in Gang setzt,</li><li>ein kurzer Eintrag im Sammel-Template, damit die anderen davon profitieren.</li></ul>
+
+<h2>So geht ihr vor</h2>
+<ol class="steps">
+<li data-r><div class="sh"><span class="sn">1</span><h3>Thema finden</h3><span class="dur">15 Min</span></div><div class="sb"><p>Sucht euch eine Stunde, in der die Lernenden etwas Sprachliches produzieren: eine Begründung, eine Argumentation, eine Deutung, einen in Worten erklärten Rechenweg. Fällt euch nichts ein, hilft das <a href='vormittag-themen.html'>Themen-Rezept</a>.</p></div></li>
+<li data-r><div class="sh"><span class="sn">2</span><h3>Klassenraum einrichten</h3><span class="dur">20 Min</span></div><div class="sb"><p>Bei fobizz anmelden, neuen Klassenraum anlegen, einen Chatbot fürs Fach erstellen. Den System-Prompt schreibt ihr mit dem <a href='vormittag-baukasten.html'>Baukasten</a>. Wichtig sind vor allem die Guardrails, die den Bot davon abhalten, die Lösung zu verraten.</p></div></li>
+<li data-r><div class="sh"><span class="sn">3</span><h3>Eingabeweg klären</h3><span class="dur">5 Min</span></div><div class="sb"><p>Genau zwei Wege sind erlaubt: <b>Tippen</b> für alles am Gerät und <b>Diktieren</b> über die Mikrofon-Taste. Am Windows-Rechner geht das mit Windows-Taste und H.</p><figure class="art" data-r><img src="art/input-wege.svg" alt="Tippen und Diktieren sind erlaubt, Foto und Scan nicht" loading="lazy"></figure></div></li>
+<li data-r><div class="sh"><span class="sn">4</span><h3>Ablauf für die Klasse bauen</h3><span class="dur">15 Min</span></div><div class="sb"><p>Formuliert den Auftrag in Runden: Erstentwurf schreiben, im Klassenraum abgeben und das Feedback lesen, die Hinweise prüfen statt blind übernehmen, überarbeiten. Wenn Zeit ist, mehrere Runden.</p></div></li>
+<li data-r><div class="sh"><span class="sn">5</span><h3>Gegenseitig testen</h3><span class="dur">20 Min</span></div><div class="sb"><p>Tauscht mit einer anderen Gruppe, am besten aus einem fremden Fach. Die merkt sofort, wenn eure Anweisung nur für Eingeweihte verständlich ist. Gebt absichtlich schwache Entwürfe ein und beobachtet: Verrät der Bot die Lösung? Bleibt er beim Fach? Versteht auch ein Fachfremder das Feedback?</p></div></li></ol>
+
+<h2>Ergebnisse sichern</h2>
+<p>Tragt vier Dinge ins Sammel-Template ein: Fach, Jahrgang und Thema; den Wortlaut eures System-Prompts;
+den Eingabeweg der Lernenden; und eure ehrliche Einschätzung, ob das in einer echten Stunde funktioniert.</p>
+
+<aside class="note ok" data-r><h4>90 Minuten im Überblick</h4><p>Thema 15, Klassenraum 20, Eingabeweg 5, Ablauf 15, Test 20, Sichern 15. Alles in Minuten.</p></aside>
+
+<div class="next"><a href="index.html">&larr; Start</a><a href="vormittag-themen.html">Themen-Rezept &rarr;</a></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p><b>Medienpädagogischer Tag KI</b><br>Gymnasium Odenthal · [Datum]</p>
+    <p class="mut">Diese Seite ersetzt den Ausdruck.<br>Die Word-Fassungen liegen im Materialpaket.</p>
+  </div>
+</footer>
+<script src="app.js?v=202608081711"></script>
+</body>
+</html>

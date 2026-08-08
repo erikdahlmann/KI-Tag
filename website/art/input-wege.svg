@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" width="760" height="260" role="img" fill="none">
+<rect x="0" y="0" width="760" height="260" rx="18" fill="#fbfcfa"/>
+<rect x="34" y="34" width="330" height="192" rx="14" fill="#eaf3ee" stroke="#3d9670" stroke-width="2"/>
+<text x="199" y="66" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="700" fill="#0f3d2a" text-anchor="middle">Geht</text>
+<rect x="78" y="92" width="106" height="66" rx="8" fill="#fbfcfa" stroke="#1a6b47" stroke-width="2"/>
+<rect x="89" y="104" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="106" y="104" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="123" y="104" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="140" y="104" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="157" y="104" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="89" y="119" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="106" y="119" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="123" y="119" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="140" y="119" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="157" y="119" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="89" y="134" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="106" y="134" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="123" y="134" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="140" y="134" width="11" height="9" rx="2" fill="#bcdcca"/>
+<rect x="157" y="134" width="11" height="9" rx="2" fill="#bcdcca"/>
+<text x="131" y="174" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#0f3d2a" text-anchor="middle">Tippen</text>
+<rect x="231" y="96" width="26" height="38" rx="13" fill="#fbfcfa" stroke="#1a6b47" stroke-width="2"/>
+<path d="M221 126 a23 23 0 0 0 46 0" stroke="#1a6b47" stroke-width="2" stroke-linecap="round"/>
+<path d="M244 149 L244 158" stroke="#1a6b47" stroke-width="2" stroke-linecap="round"/>
+<text x="244" y="174" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#0f3d2a" text-anchor="middle">Diktieren</text>
+<rect x="396" y="34" width="330" height="192" rx="14" fill="#fbfcfa" stroke="#d6e3da" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="561" y="66" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="700" fill="#8b9a91" text-anchor="middle">Geht nicht</text>
+<rect x="500" y="96" width="122" height="88" rx="10" fill="none" stroke="#8b9a91" stroke-width="2"/>
+<circle cx="532" cy="124" r="11" fill="none" stroke="#8b9a91" stroke-width="2"/>
+<path d="M508 172 L544 138 L572 164 L590 148 L614 172" stroke="#8b9a91" stroke-width="2" stroke-linejoin="round"/>
+<path d="M506 190 L616 90" stroke="#c07d1c" stroke-width="3" stroke-linecap="round"/>
+<text x="561" y="212" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b9a91" text-anchor="middle">Foto, Scan, Handschrift</text>
+</svg>

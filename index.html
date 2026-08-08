@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Master-Paket · Medienpädagogischer Tag KI</title>
+<link rel="icon" href="website/art/mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --g900:#0f3d2a;--g700:#1a6b47;--g500:#3d9670;--g50:#eaf3ee;
+  --amb:#a8690f;--amb-bg:#f8ecd7;--ink:#16241c;--mut:#5d6b62;--line:#dce6df;
+  --bg:#f3f6f3;--card:#fbfcfa;
+  --disp:"Barlow","Segoe UI Semibold",system-ui,sans-serif;
+  --text:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --sh:0 1px 2px rgba(16,54,36,.05),0 8px 24px rgba(16,54,36,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root{--g900:#a8dcc0;--g700:#5fbc8d;--g500:#4aa87a;--g50:#17281f;
+    --amb:#e0a94a;--amb-bg:#2c2216;--ink:#e8efe9;--mut:#9fb0a5;--line:#26372d;
+    --bg:#0e1712;--card:#141f19;--sh:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25)}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--text);background:var(--bg);color:var(--ink);line-height:1.65;font-size:16.5px}
+.wrap{max-width:920px;margin-inline:auto;padding-inline:24px}
+h1,h2,h3,.kick,.brand{font-family:var(--disp)}
+header{background:linear-gradient(150deg,var(--g700),#0a2c1e);color:#fff;padding-block:52px 46px}
+header .kick{font-size:12.5px;letter-spacing:1.8px;text-transform:uppercase;color:#9ed9bb;font-weight:700}
+header h1{font-size:clamp(28px,4.6vw,42px);font-weight:800;line-height:1.1;margin:10px 0 12px;letter-spacing:-.4px}
+header p{color:#cfe8db;max-width:52ch}
+.brandrow{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.brandrow img{width:40px;height:40px;border-radius:11px}
+.brandrow b{font-size:17px}
+main{padding-block:44px 70px}
+h2{font-size:24px;color:var(--g900);margin:38px 0 6px;font-weight:700}
+h2:first-child{margin-top:0}
+.sub{color:var(--mut);margin-bottom:16px;max-width:64ch}
+.grid{display:grid;gap:14px;grid-template-columns:1fr 1fr;margin-bottom:8px}
+a.item{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:18px 20px;text-decoration:none;color:inherit;box-shadow:var(--sh);
+  transition:transform .16s,box-shadow .16s,border-color .16s}
+a.item:hover{transform:translateY(-2px);border-color:var(--g500);
+  box-shadow:0 2px 4px rgba(16,54,36,.06),0 14px 30px rgba(16,54,36,.1)}
+a.item.big{grid-column:1/-1;background:var(--g50);border-color:var(--g500)}
+a.item.amb{background:var(--amb-bg);border-color:var(--amb)}
+.item h3{font-size:18px;color:var(--g900);font-weight:700;margin-bottom:3px}
+.item.amb h3{color:var(--amb)}
+.item p{font-size:14.5px;color:var(--mut)}
+.item .type{display:inline-block;font-family:var(--disp);font-size:11px;font-weight:700;letter-spacing:.7px;
+  text-transform:uppercase;color:#fff;background:var(--g700);padding:2px 9px;border-radius:999px;margin-bottom:8px}
+.item.amb .type{background:var(--amb)}
+.item .type.doc{background:var(--mut)}
+.note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--g500);
+  border-radius:14px;padding:18px 20px;margin:26px 0;box-shadow:var(--sh)}
+.note h3{font-size:16px;color:var(--g900);margin-bottom:4px}
+.note p{font-size:15px}
+footer{border-top:1px solid var(--line);background:var(--card);padding-block:26px;color:var(--mut);font-size:14px}
+@media (max-width:720px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brandrow">
+      <img src="website/art/mark.svg" alt="">
+      <b>KI-Tag</b>
+    </div>
+    <p class="kick">Master-Paket</p>
+    <h1>Medienpädagogischer Tag KI</h1>
+    <p>Alles für einen Fortbildungstag: zwei Vorträge, eine Teilnehmer-Website und die Arbeitsmaterialien zum Anpassen.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<h2>Für die Teilnehmenden</h2>
+<p class="sub">Diese Seite bekommt das Kollegium. Sie ersetzt den Ausdruck.</p>
+<div class="grid">
+  <a class="item big" href="website/index.html">
+    <span class="type">Website</span>
+    <h3>Teilnehmer-Portal</h3>
+    <p>Arbeitsaufträge, Themen-Rezept, System-Prompt-Baukasten mit Kopierknöpfen, Werkzeugkasten. Für Handy, Tablet und Laptop.</p>
+  </a>
+</div>
+
+<h2>Vorträge</h2>
+<p class="sub">Im Browser öffnen. Pfeiltasten blättern, <b>S</b> zeigt die Sprechnotizen, <b>F</b> schaltet auf Vollbild.</p>
+<div class="grid">
+  <a class="item" href="1a_Keynote_Vormittag.html">
+    <span class="type">Keynote</span>
+    <h3>Vormittag</h3>
+    <p>Einstieg in den Tag. Warum KI, was der Lehrplan verlangt, das Verdummungspotential, Ablauf. Acht Folien, etwa 30 Minuten.</p>
+  </a>
+  <a class="item amb" href="1b_Keynote_Nachmittag.html">
+    <span class="type">Keynote</span>
+    <h3>Nachmittag</h3>
+    <p>Material erstellen mit KI. Gemini im Canvas, NotebookLM, der Auftrag. Sieben Folien, etwa 30 Minuten.</p>
+  </a>
+</div>
+
+<h2>Arbeitsmaterialien</h2>
+<p class="sub">Word-Dateien zum Anpassen und Ausdrucken. Inhaltlich identisch mit der Website.</p>
+<div class="grid">
+  <a class="item" href="2_Ablaufplan.docx"><span class="type doc">Word</span><h3>Ablaufplan</h3><p>Tagesraster von 08:30 bis 16:00, mit Hinweisen fürs Kollegium.</p></a>
+  <a class="item" href="8_Sammel-und-Reflexions-Template.docx"><span class="type doc">Word</span><h3>Sammeln und Reflektieren</h3><p>Toolneutrales Raster plus Leitfragen für beide Reflexionsrunden.</p></a>
+  <a class="item" href="3_Arbeitsauftrag_Vormittag.docx"><span class="type doc">Word</span><h3>Arbeitsauftrag Vormittag</h3><p>KI-Ping-Pong im fobizz-Klassenraum, in fünf Schritten.</p></a>
+  <a class="item" href="4_Themen-Rezept_und_Beispiele.docx"><span class="type doc">Word</span><h3>Themen-Rezept</h3><p>Fünf Kriterien und vier ausgearbeitete Beispiele, auch für MINT.</p></a>
+  <a class="item" href="5_System-Prompt-Baukasten.docx"><span class="type doc">Word</span><h3>System-Prompt-Baukasten</h3><p>Vier Blöcke und fertige Guardrails gegen verschenkte Lösungen.</p></a>
+  <a class="item" href="6_Arbeitsauftrag_Nachmittag.docx"><span class="type doc">Word</span><h3>Arbeitsauftrag Nachmittag</h3><p>Drei Wege, ein vorzeigbares Ergebnis.</p></a>
+  <a class="item" href="7_Werkzeugkasten_Nachmittag.docx"><span class="type doc">Word</span><h3>Werkzeugkasten</h3><p>Gemini-Canvas-Formate, NotebookLM, Text ohne Abtippen.</p></a>
+</div>
+
+<div class="note">
+  <h3>Vor dem Einsatz anpassen</h3>
+  <p>Datum, Schule und Namen stehen als Platzhalter im Material. Sie finden sich auf der Startseite der
+  Website, auf der Titel- und Schlussfolie beider Vorträge und in der Fußzeile der Word-Dateien.</p>
+</div>
+
+</main>
+
+<footer class="wrap">
+  Master-Paket „Medienpädagogischer Tag KI“ · frei verwendbar und anpassbar
+</footer>
+</body>
+</html>
