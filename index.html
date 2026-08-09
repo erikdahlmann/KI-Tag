@@ -11,17 +11,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --g900:#0f3d2a;--g700:#1a6b47;--g500:#3d9670;--g50:#eaf3ee;
+  --g900:#0f3d2a;--g700:#1a6b47;--g500:#3d9670;--g200:#bcdcca;--g50:#eaf3ee;
   --amb:#a8690f;--amb-bg:#f8ecd7;--ink:#16241c;--mut:#5d6b62;--line:#dce6df;
   --bg:#f3f6f3;--card:#fbfcfa;
   --disp:"Barlow","Segoe UI Semibold",system-ui,sans-serif;
   --text:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
-  --sh:0 1px 2px rgba(16,54,36,.05),0 8px 24px rgba(16,54,36,.06);
+  --sh:0 1px 3px rgba(16,54,36,.07);
 }
 @media (prefers-color-scheme:dark){
   :root{--g900:#a8dcc0;--g700:#5fbc8d;--g500:#4aa87a;--g50:#17281f;
     --amb:#e0a94a;--amb-bg:#2c2216;--ink:#e8efe9;--mut:#9fb0a5;--line:#26372d;
-    --bg:#0e1712;--card:#141f19;--sh:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25)}
+    --g200:#2b4d3b;--bg:#0e1712;--card:#141f19;--sh:0 1px 3px rgba(0,0,0,.32)}
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:var(--text);background:var(--bg);color:var(--ink);line-height:1.65;font-size:16.5px}
@@ -43,7 +43,7 @@ a.item{display:block;background:var(--card);border:1px solid var(--line);border-
   padding:18px 20px;text-decoration:none;color:inherit;box-shadow:var(--sh);
   transition:transform .16s,box-shadow .16s,border-color .16s}
 a.item:hover{transform:translateY(-2px);border-color:var(--g500);
-  box-shadow:0 2px 4px rgba(16,54,36,.06),0 14px 30px rgba(16,54,36,.1)}
+  box-shadow:0 3px 8px rgba(16,54,36,.10)}
 a.item.big{grid-column:1/-1;background:var(--g50);border-color:var(--g500)}
 a.item.amb{background:var(--amb-bg);border-color:var(--amb)}
 .item h3{font-size:18px;color:var(--g900);font-weight:700;margin-bottom:3px}
@@ -53,8 +53,9 @@ a.item.amb{background:var(--amb-bg);border-color:var(--amb)}
   text-transform:uppercase;color:#fff;background:var(--g700);padding:2px 9px;border-radius:999px;margin-bottom:8px}
 .item.amb .type{background:var(--amb)}
 .item .type.doc{background:var(--mut)}
-.note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--g500);
-  border-radius:14px;padding:18px 20px;margin:26px 0;box-shadow:var(--sh)}
+/* Kein Seitenstreifen: voller Rahmen im Akzentton plus Flächenton. */
+.note{background:var(--g50);border:1px solid var(--g200);
+  border-radius:14px;padding:18px 20px;margin:26px 0}
 .note h3{font-size:16px;color:var(--g900);margin-bottom:4px}
 .note p{font-size:15px}
 footer{border-top:1px solid var(--line);background:var(--card);padding-block:26px;color:var(--mut);font-size:14px}
