@@ -10,14 +10,14 @@ Schul- und datumsneutral gehalten, also für beliebige Schulen wiederverwendbar.
 Der Tag ist zweigeteilt.
 
 **Vormittag: KI mit den Lernenden.** In fachaffinen Kleingruppen bauen die Lehrkräfte ein
-KI-gestütztes Unterrichtselement nach dem Ping-Pong-Prinzip: Die Klasse schreibt etwas, die KI gibt
-kriterienbasiertes Feedback, die Lernenden überarbeiten. Umgesetzt in fobizz-Klassenräumen, weil das
-die datenschutzkonforme Umgebung ist. Der dortige Chatbot verarbeitet ausschließlich Text, deshalb
-sind alle Szenarien im Paket rein text- und diktatbasiert.
+Unterrichtselement nach dem Ping-Pong-Prinzip: Die Klasse schreibt etwas, die KI gibt
+kriterienbasiertes Feedback, die Lernenden überarbeiten. Gearbeitet wird in fobizz-Klassenräumen,
+weil das die datenschutzkonforme Umgebung ist. Der Chatbot dort versteht nur Text. Deshalb kommen
+alle Szenarien im Paket ohne Foto und ohne Scan aus.
 
-**Nachmittag: KI für die eigene Arbeit.** Auf privaten Google-Konten, also ohne Schülerdaten und
-damit ohne die Beschränkungen des Vormittags. Mit Gemini im Canvas-Modus und NotebookLM erstellt
-jede Gruppe ein vorzeigbares Material.
+**Nachmittag: KI für die eigene Arbeit.** Auf privaten Google-Konten. Weil keine Schülerdaten im
+Spiel sind, fallen die Beschränkungen vom Vormittag weg. Mit Gemini im Canvas-Modus und NotebookLM
+baut jede Gruppe ein vorzeigbares Material.
 
 ## Inhalt
 
@@ -45,11 +45,11 @@ Schlussfolie beider Vorträge und in der Fußzeile der Word-Dateien.
 
 ## Didaktischer Kern
 
-Das Paket ist auf kognitive Aktivierung ausgerichtet. Der System-Prompt-Baukasten enthält deshalb
-eine Sammlung von Guardrails, die verhindern, dass der Chatbot fertige Lösungen ausgibt, statt
-nachzufragen. Als Legitimation dient der NRW-Kernlehrplan, der die Auseinandersetzung mit
-generativen KI-Systemen verpflichtend vorsieht und den kritisch-reflektierten Umgang ausdrücklich
-in die Leistungsbewertung einbezieht.
+Alles im Paket zielt auf kognitive Aktivierung. Eine KI, die auf Zuruf die Lösung liefert, nimmt den
+Lernenden genau das Denken ab, um das es geht. Der System-Prompt-Baukasten enthält deshalb fertige
+Guardrails, die den Chatbot zum Nachfragen zwingen. Die Legitimation liefert der NRW-Kernlehrplan:
+Er schreibt die Auseinandersetzung mit generativen KI-Systemen verpflichtend vor und verlangt
+ausdrücklich, den kritisch-reflektierten Umgang in die Leistungsbewertung einzubeziehen.
 
 ## Lizenz
 
