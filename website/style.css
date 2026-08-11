@@ -25,6 +25,9 @@ body{font-family:var(--text);color:var(--ink);background:var(--bg);line-height:1
   -webkit-font-smoothing:antialiased;font-size:16.5px}
 h1,h2,h3,h4,.kick,.brand,.tag,.sn,.dur,.copy,dt{font-family:var(--disp)}
 .wrap{max-width:1000px;margin-inline:auto;padding-inline:24px}
+/* Eigener Fokusring. Der Browser-Standard war sichtbar, aber orange und quer zur Palette. */
+:focus-visible{outline:3px solid var(--g500);outline-offset:2px;border-radius:4px}
+.copy:focus-visible{outline-color:var(--g900);outline-offset:3px}
 .skip{position:absolute;left:-999px}
 .skip:focus{left:12px;top:12px;z-index:99;background:var(--g900);color:#fff;padding:10px 16px;border-radius:var(--r-sm)}
 
@@ -42,7 +45,8 @@ h1,h2,h3,h4,.kick,.brand,.tag,.sn,.dur,.copy,dt{font-family:var(--disp)}
   padding:8px 13px;border-radius:var(--r-sm);transition:background .15s,color .15s}
 .nav a:hover{color:var(--ink);background:var(--g50)}
 .nav a.on{color:var(--g900);background:var(--g50);box-shadow:inset 0 -2px 0 var(--g500)}
-.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;padding:9px;cursor:pointer}
+.burger{display:none;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  background:none;border:0;min-width:44px;min-height:44px;cursor:pointer}
 .burger span{width:24px;height:2.5px;background:var(--ink);border-radius:2px}
 
 /* Hero */
@@ -107,10 +111,10 @@ a:hover{color:var(--g900)}
 /* Hinweise. Kein Seitenstreifen: voller Rahmen im Akzentton plus Flächenton. */
 .note{border-radius:var(--r-card);padding:19px 22px;margin:20px 0;
   border:1px solid var(--g200);background:var(--g50);box-shadow:none}
-.note h4{font-size:16px;margin-bottom:5px;color:var(--g900)}
+.note .nt{font-size:16px;font-family:var(--disp);font-weight:700;margin-bottom:5px;color:var(--g900)}
 .note p{font-size:15.5px}
 .note.warn{background:var(--amb-bg);border-color:var(--amb-ln)}
-.note.warn h4{color:var(--amb)}
+.note.warn .nt{color:var(--amb)}
 .note.ok{background:var(--g50);border-color:var(--g200)}
 
 /* Schritte */
@@ -129,13 +133,16 @@ a:hover{color:var(--g900)}
 /* Code + Kopieren */
 .snip{position:relative;margin:11px 0 15px}
 .snip pre{background:var(--code);color:var(--code-tx);border-radius:12px;padding:18px 20px;
-  padding-right:118px;overflow:auto}
+  padding-right:126px;overflow:auto}
 .snip code{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-size:14px;
   line-height:1.6;white-space:pre-wrap}
-.copy{position:absolute;top:11px;right:11px;background:var(--g500);color:#fff;border:0;
-  font-family:var(--disp);font-weight:700;font-size:13px;padding:7px 14px;border-radius:9px;
+/* Flaeche wie die Chips: weiss auf --g700 ergibt 6,49:1. --g500 lag bei 3,62:1.
+   Mindestens 44px hoch, damit das Ziel auf dem Tablet sicher zu treffen ist. */
+.copy{position:absolute;top:10px;right:10px;background:var(--g700);color:#fff;border:0;
+  font-family:var(--disp);font-weight:700;font-size:13px;padding:0 16px;border-radius:10px;
+  min-height:44px;display:inline-flex;align-items:center;
   cursor:pointer;transition:background .15s, transform .1s}
-.copy:hover{background:var(--g700)}
+.copy:hover{background:var(--g900)}
 .copy:active{transform:scale(.97)}
 .copy.done{background:var(--amb);color:#fff}
 

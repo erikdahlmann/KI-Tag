@@ -24,6 +24,8 @@
     --g200:#2b4d3b;--bg:#0e1712;--card:#141f19;--sh:0 1px 3px rgba(0,0,0,.32)}
 }
 *{box-sizing:border-box;margin:0;padding:0}
+/* Eigener Fokusring statt Browser-Orange. */
+:focus-visible{outline:3px solid var(--g500);outline-offset:3px;border-radius:6px}
 body{font-family:var(--text);background:var(--bg);color:var(--ink);line-height:1.65;font-size:16.5px}
 .wrap{max-width:920px;margin-inline:auto;padding-inline:24px}
 h1,h2,h3,.kick,.brand{font-family:var(--disp)}
@@ -66,7 +68,7 @@ footer{border-top:1px solid var(--line);background:var(--card);padding-block:26p
 <header>
   <div class="wrap">
     <div class="brandrow">
-      <img src="website/art/mark.svg" alt="">
+      <img src="website/art/mark.svg" alt="" fetchpriority="high">
       <b>KI-Tag</b>
     </div>
     <p class="kick">Master-Paket</p>
