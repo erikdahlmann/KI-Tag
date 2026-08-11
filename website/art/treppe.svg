@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="800" height="330" role="img" fill="none">
+<rect x="0" y="0" width="800" height="330" rx="18" fill="#fbfcfa"/>
+<rect x="40" y="206" width="168" height="62" rx="11" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
+<text x="124.0" y="236" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="700" fill="#0f3d2a" text-anchor="middle">Markdown</text>
+<text x="124.0" y="258" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="500" fill="#8b9a91" text-anchor="middle">Arbeitsblatt</text>
+<rect x="222" y="160" width="168" height="108" rx="11" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
+<text x="306.0" y="190" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="700" fill="#0f3d2a" text-anchor="middle">HTML</text>
+<text x="306.0" y="212" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="500" fill="#8b9a91" text-anchor="middle">Mini-Webseite</text>
+<rect x="404" y="114" width="168" height="154" rx="11" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
+<text x="488.0" y="144" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="700" fill="#0f3d2a" text-anchor="middle">App</text>
+<text x="488.0" y="166" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="500" fill="#8b9a91" text-anchor="middle">interaktiv</text>
+<rect x="586" y="68" width="168" height="200" rx="11" fill="#f8ecd7" stroke="#c07d1c" stroke-width="2"/>
+<text x="670.0" y="98" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="700" fill="#c07d1c" text-anchor="middle">LaTeX</text>
+<text x="670.0" y="120" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="500" fill="#8b9a91" text-anchor="middle">Formelsatz</text>
+<path d="M118 188 C 300 176, 420 120, 700 52" stroke="#3d9670" stroke-width="2" stroke-dasharray="6 6" fill="none" stroke-linecap="round"/>
+<path d="M690 47 L702 51 L695 61" stroke="#3d9670" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<text x="400.0" y="306" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="500" fill="#8b9a91" text-anchor="middle">Startet unten und lasst mit einem Satz hochschalten</text>
+</svg>

@@ -45,11 +45,12 @@ body{font-family:var(--text);background:#0b1410;color:var(--ink);overflow:hidden
 .kart{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.6vh 1.4vw}
 .kart svg{width:100%;height:auto;display:block}
 .center{align-items:center;text-align:center}
+.center .kart{width:min(78%,900px)}
 .center .lead{max-width:80%}
-.title{background:linear-gradient(140deg,var(--g700),#0a2c1e)}
+.title{background:linear-gradient(150deg,#17603f,#0c3222)}
 .title h1{color:#fff;font-size:5.6vw}
-.title .title .sub{font-size:2.2vw;color:#cfe8db;margin-top:2.6vh;line-height:1.4}
-.title .foot{position:absolute;bottom:6vh;left:8vw;font-size:1.35vw;color:#8cc5a7}
+.title .sub{font-size:2.2vw;color:#e4f2ea;margin-top:2.6vh;line-height:1.4}
+.title .foot{position:absolute;bottom:6vh;left:8vw;font-size:1.35vw;color:#b6dcc7}
 .lnk{display:inline-block;margin-top:2.4vh;font-size:1.7vw;color:var(--g700);text-decoration:none;
   border-bottom:2px solid var(--g500);padding-bottom:2px}
 #bar{position:fixed;bottom:0;left:0;right:0;height:.55vh;background:var(--g500);z-index:9;
@@ -63,6 +64,25 @@ body{font-family:var(--text);background:#0b1410;color:var(--ink);overflow:hidden
 #notes h4{font-family:var(--disp);color:#9ed9bb;font-size:1.3vw;letter-spacing:.18em;text-transform:uppercase;margin-bottom:1.4vh}
 #notes .t{font-size:1.6vw;line-height:1.55}
 #notes .t b{color:#fff}
+
+/* Ruhiger Aufbau: Ueberschrift zuerst, dann der Rest. Ein Moment je Folie,
+   kein Effektgewitter. Exponentielles Ausklingen, kein Federn. */
+/* Nur wenn JS laeuft. Ohne JS bleibt alles sichtbar, statt auf Deckkraft 0 zu haengen.
+   html.noanim schaltet ab, falls die Uhr steht (versteckter Tab, gedrosselter Renderer). */
+@media (prefers-reduced-motion: no-preference){
+  html.js:not(.noanim) .s.on > *{animation:auf .52s cubic-bezier(.16,1,.3,1) backwards}
+  html.js:not(.noanim) .s.on > *:nth-child(1){animation-delay:.04s}
+  html.js:not(.noanim) .s.on > *:nth-child(2){animation-delay:.13s}
+  html.js:not(.noanim) .s.on > *:nth-child(3){animation-delay:.22s}
+  html.js:not(.noanim) .s.on > *:nth-child(4){animation-delay:.31s}
+  /* Der Kreislauf baut sich Station fuer Station auf, waehrend erklaert wird. */
+  html.js:not(.noanim) .s.on .ppst{animation:auf .42s cubic-bezier(.16,1,.3,1) backwards}
+  html.js:not(.noanim) .s.on .ppst:nth-of-type(1){animation-delay:.42s}
+  html.js:not(.noanim) .s.on .ppst:nth-of-type(2){animation-delay:.60s}
+  html.js:not(.noanim) .s.on .ppst:nth-of-type(3){animation-delay:.78s}
+  html.js:not(.noanim) .s.on .ppst:nth-of-type(4){animation-delay:.96s}
+}
+@keyframes auf{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @media (max-width:900px){
   .s h1{font-size:32px}.s h2{font-size:24px}.s p,.s li{font-size:15px}
   .lead{font-size:17px !important;max-width:100%}.big{font-size:19px}
@@ -71,13 +91,36 @@ body{font-family:var(--text);background:#0b1410;color:var(--ink);overflow:hidden
   #notes h4{font-size:11px}#notes .t{font-size:14px}.title h1{font-size:34px}.title .sub{font-size:16px}
 }
 </style>
+<script>document.documentElement.className+=" js";</script>
 </head>
 <body>
 <div id="stage">
 <section class="s title" data-notes="Kurz ankommen lassen, dann loslegen. Nicht entschuldigen für das Thema. Ein Satz zum Rahmen genügt: <b>Heute geht es nicht um die große KI-Grundsatzdebatte, sondern um zwei konkrete Sachen: KI mit der Klasse, und KI für die eigene Vorbereitung.</b>"><h1>KI im Unterricht.<br>Und KI für euch.</h1><p class="sub">Ein Tag in zwei Hälften: vormittags mit den Lernenden, nachmittags für die eigene Arbeit.</p><div class="foot">Vormittag · Datum · Schule · Medienberatung</div></section>
 <section class="s " data-notes="KI ist längst da, ob wir wollen oder nicht. Sie steckt in dem, was die Jugendlichen unterhält, in dem, was ihre Meinung formt, und zunehmend in dem, was sie als Lern- oder sogar Lebensbegleiter nutzen. Die dunkle Seite ruhig ansprechen: Chatbots als Ersatzbeziehung. Danach kommt der Arbeitsmarkt. <b>Pointe: Wenn das alles Teil ihrer Welt ist, ist es unser Auftrag, ihnen den kompetenten Umgang beizubringen. Nicht Kür, sondern Pflicht.</b>"><h2>KI ist längst in ihrer Welt</h2><div class="g2"><div class="card"><h3>Unterhaltung</h3><p>Die Feeds sind KI-kuratiert, oft auch KI-gemacht.</p></div><div class="card"><h3>Meinungsbildung</h3><p>Fake News und KI-Videos formen mit, was für wahr gehalten wird.</p></div><div class="card"><h3>Lern- und Lebensbegleiter</h3><p>Vom Hausaufgaben-Helfer bis zum Ersatz-Gesprächspartner. Auch mit Schattenseiten.</p></div><div class="card"><h3>Später: Arbeitswerkzeug</h3><p>In fast jedem Beruf, den unsere Lernenden ergreifen werden.</p></div></div><p class="big" style="margin-top:3vh">Ihnen den kompetenten Umgang beizubringen, ist Bildungsauftrag. Keine Kür.</p></section>
 <section class="s " data-notes="Das ist die Legitimation, schwarz auf weiß. Vorlesen oder vorlesen lassen. <b>Betonen: verpflichtend, in allen Jahrgangsstufen, und die Leistungsbewertung muss beides abbilden</b>, also Bedienung UND kritischen Umgang. Dazusagen: Das ist der Vorschlag für Mathe SII, steht aber sinngemäß in allen Fächern und in der SI. Kommt also auf alle im Raum zu."><div class="quote">Die Nutzung von und Auseinandersetzung mit generativen KI-Systemen ist in angemessenem Umfang in allen Jahrgangsstufen <b>verpflichtend</b>. Neben die kompetente Bedienung der KI tritt ein <b>kritisch-reflektierter Umgang</b> mit Ergebnissen generativer KI. Die Leistungsbewertung muss beides berücksichtigen.<div class="src">Aus dem Vorschlag für den Kernlehrplan Mathematik SII (NRW), sinngemäß in allen Fächern und in der Sekundarstufe I</div></div></section>
-<section class="s center" data-notes="Jetzt der Haken, der ehrlich macht. KI kann auch dumm machen, wenn sie das Denken abnimmt, wo sie es anregen sollte. Wer nur abtippt, was der Chatbot ausspuckt, lernt nichts. <b>Nicht das Schummeln ist das Problem, es ist die abgesparte Denkleistung.</b> Video als Anker anspielen, zwei bis drei Minuten reichen. Danach die Wende: Genau deshalb bauen wir den Tag so, dass die KI zum Nachdenken zwingt."><h2 style="font-size:4.2vw">Das <span class="amb">Verdummungspotential</span></h2><p class="lead">Nimmt die KI das Denken ab, wo sie es anregen sollte, lernt niemand etwas. Das Problem ist nicht das Schummeln. Es ist die abgesparte Denkleistung, und die sieht man keinem Text an.</p><a class="lnk" href="https://www.youtube.com/watch?v=3lPnN8omdPA" target="_blank" rel="noopener">Video-Anker: youtube.com/watch?v=3lPnN8omdPA</a></section>
+<section class="s split" data-notes="Jetzt der Haken, der ehrlich macht. KI kann auch dumm machen, wenn sie das Denken abnimmt, wo sie es anregen sollte. Wer nur abtippt, was der Chatbot ausspuckt, lernt nichts. <b>Nicht das Schummeln ist das Problem, es ist die abgesparte Denkleistung.</b> Auf die Grafik zeigen: Beide Wege enden bei einem Ergebnis, nur bei einem ist etwas haengengeblieben. Video als Anker anspielen, zwei bis drei Minuten reichen. Danach die Wende: Genau deshalb bauen wir den Tag so, dass die KI zum Nachdenken zwingt."><div><h2>Das <span class="amb">Verdummungspotential</span></h2><p>Nimmt die KI das Denken ab, wo sie es anregen sollte, lernt niemand etwas.</p><p class="big" style="margin-top:1.8vh">Nicht das Schummeln ist das Problem. Es ist die abgesparte Denkleistung, und die sieht man keinem Text an.</p><a class="lnk" href="https://www.youtube.com/watch?v=3lPnN8omdPA" target="_blank" rel="noopener">Video-Anker: youtube.com/watch?v=3lPnN8omdPA</a></div><div class="kart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" role="img" fill="none">
+<rect x="0" y="0" width="800" height="330" rx="18" fill="#fbfcfa"/>
+<rect x="34" y="126" width="120" height="72" rx="12" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
+<text x="94" y="168" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#0f3d2a" text-anchor="middle">Aufgabe</text>
+<path d="M162 148 C 300 148, 380 62, 520 62" stroke="#c07d1c" stroke-width="2.5" stroke-dasharray="7 6" fill="none" stroke-linecap="round"/>
+<path d="M514 57 L521 62 L514 67" stroke="#c07d1c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="340" y="44" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#c07d1c" text-anchor="middle">KI liefert die Lösung</text>
+<rect x="530" y="32" width="112" height="60" rx="10" fill="none" stroke="#8b9a91" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="586" y="68" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#8b9a91" text-anchor="middle">Ergebnis</text>
+<text x="700" y="68" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="500" fill="#8b9a91" text-anchor="middle">nichts gelernt</text>
+<path d="M162 176 C 250 176, 270 250, 330 250" stroke="#1a6b47" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<circle cx="382" cy="250" r="34" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2.5"/>
+<circle cx="370" cy="250" r="4" fill="#1a6b47"/>
+<circle cx="382" cy="250" r="4" fill="#1a6b47"/>
+<circle cx="394" cy="250" r="4" fill="#1a6b47"/>
+<text x="382" y="306" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#0f3d2a" text-anchor="middle">nachdenken</text>
+<path d="M418 250 C 470 250, 480 250, 520 250" stroke="#1a6b47" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M514 245 L521 250 L514 255" stroke="#1a6b47" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="340" y="214" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#1a6b47" text-anchor="middle">KI fragt nach</text>
+<rect x="530" y="220" width="112" height="60" rx="10" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
+<text x="586" y="256" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#0f3d2a" text-anchor="middle">Ergebnis</text>
+<text x="706" y="256" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#1a6b47" text-anchor="middle">und verstanden</text>
+</svg></div></section>
 <section class="s split" data-notes="Die Auflösung und der rote Faden für den ganzen Tag. KI soll begleiten, strukturieren, nachfragen, Feedback geben. Sie soll helfen, Struktur zu finden und zu halten. Was sie nicht soll: die Lösung liefern. <b>Merksatz, den ihr euch merken sollt: Die KI stellt die Fragen, denken sollen die Lernenden.</b> Auf die Grafik zeigen: genau dieses Hin und Her bauen wir heute Vormittag."><div><h2>KI, die zum Denken zwingt</h2><p class="lead" style="max-width:100%">Sie begleitet, strukturiert und gibt Feedback. Was sie nicht tut: die Lösung liefern.</p><p class="big" style="margin-top:2.4vh">Die KI stellt die Fragen.<br>Denken sollen die anderen.</p></div><div class="kart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" role="img" fill="none">
 <rect x="0" y="0" width="760" height="440" rx="18" fill="#eaf3ee"/>
 <rect x="56" y="70" width="252" height="300" rx="14" fill="#fbfcfa" stroke="#d6e3da" stroke-width="2"/>
@@ -110,28 +153,36 @@ body{font-family:var(--text);background:#0b1410;color:var(--ink);overflow:hidden
 </svg></div></section>
 <section class="s split" data-notes="Jetzt konkret. Vormittag: KI mit der Klasse. Aus Datenschutzgründen geht das gerade nur mit fobizz und telli, telli ist noch nicht fertig, also fobizz. Kurz erklären: anonymisierte Online-Klassenräume mit Chatbots, die ihr selbst einstellt. <b>Eure Aufgabe: in fachaffinen Kleingruppen ein KI-Element in eine Stunde einbauen und einmal durchspielen.</b> Der wichtige Hinweis, den ihr gleich im Auftrag lest: Der Bot kann nur Text, keine Fotos. Das prägt die Themenwahl."><div><h2>Vormittag: mit der Klasse arbeiten</h2><p>Datenschutzkonform geht aktuell nur <b>fobizz</b>. Im Kern: anonyme Online-Klassenräume mit eigenen Chatbots, die ihr selbst einstellt.</p><p style="margin-top:1.6vh">In fachaffiner Kleingruppe baut ihr ein Ping-Pong und spielt es einmal durch.</p><p class="big amb" style="margin-top:2.4vh;font-size:2vw">Der Bot liest nur Text. Keine Fotos, kein Scan.</p></div><div class="kart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" fill="none">
 <rect x="0" y="0" width="820" height="300" rx="18" fill="#fbfcfa"/>
+<g class="ppst">
 <rect x="28" y="82" width="168" height="88" rx="12" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
 <circle cx="112.0" cy="112" r="13" fill="#1a6b47"/>
 <text x="112.0" y="117" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="700" fill="#fbfcfa" text-anchor="middle">1</text>
 <text x="112.0" y="150" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#0f3d2a" text-anchor="middle">Schreiben</text>
+</g>
 <path d="M202 126 L218 126" stroke="#8b9a91" stroke-width="2" stroke-linecap="round"/>
 <path d="M213 121 L219 126 L213 131" stroke="#8b9a91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="ppst">
 <rect x="228" y="82" width="168" height="88" rx="12" fill="#f8ecd7" stroke="#c07d1c" stroke-width="2"/>
 <circle cx="312.0" cy="112" r="13" fill="#c07d1c"/>
 <text x="312.0" y="117" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="700" fill="#fbfcfa" text-anchor="middle">2</text>
 <text x="312.0" y="150" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#0f3d2a" text-anchor="middle">Feedback</text>
+</g>
 <path d="M402 126 L418 126" stroke="#8b9a91" stroke-width="2" stroke-linecap="round"/>
 <path d="M413 121 L419 126 L413 131" stroke="#8b9a91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="ppst">
 <rect x="428" y="82" width="168" height="88" rx="12" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
 <circle cx="512.0" cy="112" r="13" fill="#1a6b47"/>
 <text x="512.0" y="117" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="700" fill="#fbfcfa" text-anchor="middle">3</text>
 <text x="512.0" y="150" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#0f3d2a" text-anchor="middle">Prüfen</text>
+</g>
 <path d="M602 126 L618 126" stroke="#8b9a91" stroke-width="2" stroke-linecap="round"/>
 <path d="M613 121 L619 126 L613 131" stroke="#8b9a91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="ppst">
 <rect x="628" y="82" width="168" height="88" rx="12" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
 <circle cx="712.0" cy="112" r="13" fill="#1a6b47"/>
 <text x="712.0" y="117" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="700" fill="#fbfcfa" text-anchor="middle">4</text>
 <text x="712.0" y="150" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#0f3d2a" text-anchor="middle">Überarbeiten</text>
+</g>
 <path d="M712 170 L712 218 Q712 232 698 232 L126 232 Q112 232 112 218 L112 178" stroke="#3d9670" stroke-width="2" stroke-dasharray="6 6" stroke-linecap="round"/>
 <path d="M107 184 L112 176 L117 184" stroke="#3d9670" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="410.0" y="264" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="500" fill="#8b9a91" text-anchor="middle">mehrere Runden, bis die Qualität stimmt</text>
@@ -172,8 +223,22 @@ function draw(){
   B.style.transform='scaleX('+((i+1)/S.length)+')';
   NT.innerHTML=S[i].dataset.notes||'<em>Keine Notiz.</em>';
   N.style.color=S[i].classList.contains('title')?'#cfe8db':'';
+  waechter();
 }
 function go(n){i=Math.max(0,Math.min(S.length-1,n));draw();}
+// Steht die Animationsuhr (versteckter Tab, gedrosselter Renderer), waere die Folie
+// leer. Dann lieber ohne Aufbau anzeigen.
+var wt;
+function waechter(){
+  clearTimeout(wt);
+  if(document.documentElement.classList.contains('noanim'))return;
+  wt=setTimeout(function(){
+    var k=S[i].children[0];
+    if(k&&parseFloat(getComputedStyle(k).opacity)===0)
+      document.documentElement.classList.add('noanim');
+  },1200);
+}
+document.addEventListener('visibilitychange',function(){ if(!document.hidden) waechter(); });
 document.addEventListener('keydown',function(e){
   if(['ArrowRight','ArrowDown',' ','PageDown'].indexOf(e.key)>-1){e.preventDefault();go(i+1);}
   else if(['ArrowLeft','ArrowUp','PageUp'].indexOf(e.key)>-1){e.preventDefault();go(i-1);}
