@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="880" height="300" role="img" fill="none">
+<rect x="0" y="0" width="880" height="300" rx="18" fill="#fbfcfa"/>
+<text x="132" y="93" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="700" fill="#0f3d2a" text-anchor="end">ohne KI</text>
+<rect x="150" y="66" width="510.59999999999997" height="42" rx="9" fill="#eaf3ee" stroke="#8b9a91" stroke-width="2"/>
+<text x="405.29999999999995" y="93" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="13.5" font-weight="600" fill="#8b9a91" text-anchor="middle">Material erstellen</text>
+<rect x="660.5999999999999" y="66" width="179.4" height="42" rx="9" fill="#eaf3ee" stroke="#8b9a91" stroke-width="2"/>
+<text x="750.3" y="93" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="13.5" font-weight="600" fill="#8b9a91" text-anchor="middle">prüfen</text>
+<text x="132" y="187" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="700" fill="#0f3d2a" text-anchor="end">mit KI</text>
+<rect x="150" y="160" width="138.0" height="42" rx="9" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
+<text x="219.0" y="187" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="13.5" font-weight="600" fill="#0f3d2a" text-anchor="middle">beschreiben</text>
+<rect x="288.0" y="160" width="262.2" height="42" rx="9" fill="#eaf3ee" stroke="#1a6b47" stroke-width="2"/>
+<text x="419.1" y="187" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="13.5" font-weight="600" fill="#0f3d2a" text-anchor="middle">prüfen und anpassen</text>
+<rect x="550.2" y="160" width="289.8" height="42" rx="9" fill="#f8ecd7" stroke="#c07d1c" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="695.1" y="187" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="13.5" font-weight="600" fill="#c07d1c" text-anchor="middle">bleibt für den Unterricht</text>
+<text x="440.0" y="262" font-family="'Barlow','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="500" fill="#8b9a91" text-anchor="middle">Die Arbeit verschiebt sich vom Erstellen zum Beurteilen.</text>
+</svg>
