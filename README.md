@@ -1,7 +1,8 @@
 # Medienpädagogischer Tag KI
 
-Master-Paket für einen ganztägigen Fortbildungstag zum Thema künstliche Intelligenz am Gymnasium.
-Schul- und datumsneutral gehalten, also für beliebige Schulen wiederverwendbar.
+Material für einen ganztägigen Fortbildungstag zum Thema künstliche Intelligenz am Gymnasium.
+Eingerichtet für den 30. September 2026 am Gymnasium Odenthal, aber ohne Aufwand auf andere
+Schulen und Termine übertragbar.
 
 **[Zum Paket](https://erikdahlmann.github.io/KI-Tag/)** · **[Teilnehmer-Website](https://erikdahlmann.github.io/KI-Tag/website/)**
 
@@ -38,10 +39,11 @@ baut jede Gruppe ein vorzeigbares Material.
 Die Vorträge sind einzelne HTML-Dateien mit eingebetteten Grafiken. Sie laufen offline in jedem
 Browser. Pfeiltasten blättern, `S` zeigt die Sprechnotizen, `F` schaltet auf Vollbild.
 
-## Vor dem Einsatz anpassen
+## Für einen anderen Termin anpassen
 
-Datum, Schule und Namen sind Platzhalter. Sie stehen auf der Startseite der Website, auf Titel- und
-Schlussfolie beider Vorträge und in der Fußzeile der Word-Dateien.
+Eingetragen sind der 30. September 2026 und das Gymnasium Odenthal. Beides steht an drei Stellen:
+in der Fußzeile der Website, auf der Titelfolie beider Vorträge und im Kopf des Ablaufplans.
+Alles andere im Paket ist schul- und datumsneutral.
 
 ## Didaktischer Kern
 
