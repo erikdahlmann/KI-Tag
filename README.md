@@ -26,7 +26,7 @@ baut jede Gruppe ein vorzeigbares Material.
 | --- | --- |
 | `index.html` | Startseite des Pakets, verlinkt alles |
 | `1a_Keynote_Vormittag.html` | Einstiegsvortrag, 8 Folien, etwa 30 Minuten |
-| `1b_Keynote_Nachmittag.html` | Vortrag zur Materialerstellung, 7 Folien, etwa 30 Minuten |
+| `1b_Keynote_Nachmittag.html` | Vortrag zur Materialerstellung, 9 Folien, etwa 30 Minuten |
 | `website/` | Teilnehmer-Website mit allen Arbeitsaufträgen |
 | `2_Ablaufplan.docx` | Tagesraster 08:30 bis 16:00 |
 | `3_Arbeitsauftrag_Vormittag.docx` | KI-Ping-Pong in fünf Schritten |
